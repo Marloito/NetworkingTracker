@@ -13,5 +13,5 @@ get '/users/new' do
 end
 
 get '/users/:id' do
-  'made it!'
+  'profile page'
 end
