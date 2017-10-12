@@ -19,7 +19,19 @@
   <title></title>
 </head>
 <body>
-  <%= yield %>
-  <footer>This website was built by Marlo Ito. 2017</footer>
+  <h1 id='header'>NetworkingTracker</h1>
+  <div class="container">
+    <div class="errors">
+      <% unless @errors.nil? %>
+      <% @errors.each do |error|%>
+        <ul>
+          <li><%= error %></li>
+        </ul>
+        <% end %>
+      <% end %>
+    </div>
+    <%= yield %>
+    <footer>This website was built by Marlo Ito -- Special thanks to Devin Miller. 2017</footer>
+  </div>
 </body>
 </html>
