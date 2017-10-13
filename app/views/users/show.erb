@@ -1,8 +1,11 @@
 <% if session[:user_id] %>
+  <% user = User.find(session[:user_id]) %>
   <form class="logout-button" action="/sessions/<%= session[:user_id] %>" method="post">
     <input type="hidden" name="_method" value="delete">
     <input type="submit" name="logout" value="logout">
   </form>
+
+  <a href="/users/<%= user.id %>/contacts">See my contacts -></a>
 <% else %>
   <% redirect '/' %>
 <% end %>
