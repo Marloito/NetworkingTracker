@@ -1,5 +1,4 @@
 class Contact < ActiveRecord::Base
-  belongs_to :contact
+  belongs_to :user
   validates :name, :user, presence: true
-  validates :phone, length: { is: 12 }
 end
