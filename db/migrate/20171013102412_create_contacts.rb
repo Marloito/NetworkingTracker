@@ -4,6 +4,7 @@ class CreateContacts < ActiveRecord::Migration
       t.belongs_to :user, null: false
       t.string :name, null: false
       t.string :phone
+      t.string :email
       t.string :linkedin
       t.string :company
       t.string :job_title
