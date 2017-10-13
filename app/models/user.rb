@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   include BCrypt
+  has_many :contacts
   validates :username, :email, { presence: true, uniqueness: true }
   validates :password_hash, { presence: true }
 
