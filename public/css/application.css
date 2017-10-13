@@ -19,6 +19,8 @@ body {
    padding:10px;
    padding-bottom:15px;   /* Height of the footer */
    font-family: 'News Cycle', sans-serif;
+   max-width: 700px;
+   margin: 0 auto;
 }
 footer {
    position:absolute;
@@ -30,13 +32,14 @@ footer {
    text-align: center;
    color:#032B2F;
 }
-
 #container {
    height:100%;
 }
-
 .errors {
   color: red;
+}
+h2 {
+  text-align: center;
 }
 
 /*

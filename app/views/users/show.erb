@@ -1,0 +1,8 @@
+<% if session[:user_id] %>
+  <form class="logout-button" action="/sessions/<%= session[:user_id] %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <input type="submit" name="logout" value="logout">
+  </form>
+<% else %>
+  <% redirect '/' %>
+<% end %>

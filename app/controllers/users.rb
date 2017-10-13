@@ -18,5 +18,5 @@ get '/users/new' do
 end
 
 get '/users/:id' do
-  'profile page'
+  erb :'/users/show'
 end
