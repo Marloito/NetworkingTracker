@@ -35,6 +35,10 @@ footer {
    height:100%;
 }
 
+.errors {
+  color: red;
+}
+
 /*
 #08708A
 #D73A31
