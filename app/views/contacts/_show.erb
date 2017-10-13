@@ -1,0 +1,45 @@
+<div class="contact-show">
+  <h3> <%= @contact.name %> </h3>
+  <ul>
+    <li>
+      Phone Number:
+      <% if @contact.phone %>
+        <%= @contact.phone %>
+      <% else %>
+        N/A
+      <% end %>
+    </li>
+    <li>
+      Email:
+      <% if @contact.email %>
+        <%= @contact.email %>
+      <% else %>
+        N/A
+      <% end %>
+    </li>
+    <li>
+      Linkedin:
+      <% if @contact.linkedin %>
+        <%= @contact.linkedin %>
+      <% else %>
+        N/A
+      <% end %>
+    </li>
+    <li>
+      Company:
+      <% if @contact.company %>
+        <%= @contact.company %>
+      <% else %>
+        N/A
+      <% end %>
+    </li>
+    <li>
+      Job Title:
+      <% if @contact.job_title %>
+        <%= @contact.job_title %>
+      <% else %>
+        N/A
+      <% end %>
+    </li>
+  </ul>
+</div>

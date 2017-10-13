@@ -2,9 +2,6 @@
 
 <ol>
   <% @contacts.each do |contact| %>
-  <% @contact = contact %>
-  <li>
-    <%= erb :'/contacts/show', layout: false %>
-  </li>
+  <li><a href="/contacts/<%= contact.id %>"><%= contact.name %></li></a>
   <% end %>
 </ol>
