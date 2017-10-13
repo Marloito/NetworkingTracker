@@ -1,0 +1,10 @@
+<h2><%= @user.username %>'s Contacts...</h2>
+
+<ol>
+  <% @contacts.each do |contact| %>
+  <% @contact = contact %>
+  <li>
+    <%= erb :'/contacts/show', layout: false %>
+  </li>
+  <% end %>
+</ol>
